@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joleaf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" integrity="sha512-0OCvzZyRsIJ9Rg7O1S+Wf9ucukmVhyOg3h5eBG05aeH4NjG78fCEaEX3ofvndmukzENiX24fK5X/jPr6Y8yIdg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <!-- Header Begins  -->
+    <header class="mainHeader">
+        <div class="container">
+            <div class="header_nav d-flex flex-wrap align-items-center justify-content-between">
+                <div class="logo"><a href="index.html"><img src="images/logo.svg" height="80" alt=""></a></div>
+                <input class="navCheck" type="checkbox" id="navCheck">
+                <label for="navCheck" class="breadcum"><span></span><span></span><span></span></label>
+                <nav>
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
+                        <li><a href="shop.html" class="nav-link px-2 link-secondary">Shop</a></li>
+                        <li><a href="about.html" class="nav-link px-2 link-dark">About</a></li>
+                        <li><a href="blog.html" class="nav-link px-2 link-dark">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link px-2 link-dark">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="headerRight">
+                    <a href="cart.html" class="cartItem">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="cartItemNum" id="cartValue">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends  -->
+
+
+
+    <main>
+    <!-- Banner Begins  -->
+    <section class="banner" style="background: url(images/header-1-image.jpg);">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="header-1-img img-fluid" src="images/header-1-text.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End     -->
+
+    <!-- Banner Bottom Section  -->
+    <section class="bannerBottom section-base section-color no-padding-y">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="icon-box icon-box-left">
+                        <span class="iconImg icon-green-1"><img src="images/icon-green-1.svg" alt=""></span>
+                        <div class="caption">
+                            <h3>PLANT BASED</h3>
+                            <p>Mother nature is our chemist</p>
+                        </div>
+                    </div>
+                </div><div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="icon-box icon-box-left">
+                        <span class="iconImg icon-green-2"><img src="images/icon-green-2.svg" alt=""></span>
+                        <div class="caption">
+                            <h3>ECO- FRIENDLY</h3>
+                            <p>Sustaining the earth's beauty</p>
+                        </div>
+                    </div>
+                </div><div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="icon-box icon-box-left">
+                        <span class="iconImg icon-green-3"><img src="images/icon-green-3.svg" alt=""></span>
+                        <div class="caption">
+                            <h3>ORGANIC</h3>
+                            <p>Gentle on your skin</p>
+                        </div>
+                    </div>
+                </div><div class="col-lg-3">
+                    <div class="icon-box icon-box-left">
+                        <span class="iconImg icon-green-4"><img src="images/icon-green-4.svg" alt=""></span>
+                        <div class="caption">
+                            <h3>CRUELTY FREE</h3>
+                            <p>It's cool to be kind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Bottom End  -->
+
+
+    <!-- Product Sections  -->
+    <section class="productSection sectionPadding bg-leafs">
+        <div class="container">
+            <div class="titleDiv text-center">
+                <span class="titleTag">perfect match</span>
+                <h2 class="titleMain">NEW PRODUCTS</h2>
+            </div>
+            <div class="productContainer">
+                <div class="row" id="product-list-container">
+                    <!-- <div class="productCol col-md-4">
+                        <div class="productBox">
+                            <figure class="productImage">
+                                <img src="${product.image}" class="img-fluid" alt="">
+                            </figure>
+                            <div class="shop-bar">
+                                <input type="number" placeholder="1" min="1">
+                                 <div class="stockElem">
+                                    <button class="cartDecreament">-</button>
+                                    <p class="produtQuantity">1</p>
+                                    <button class="cartIncrement">+</button>
+                                 </div>
+                                <a class="btn-cart item_add" href="javascript:;"></a>
+                            </div>
+                            <div class="productInfo">
+                                <h3 class="productTitle"><a href="#">${product.name}</a></h3>
+                                <div class="productDesc">${product.description}</div>
+                                <div class="productPrice">$<span class="oldPrice">${product.price && product.price.length > 1 ? product.price[1] : ""}</span><span class="actualPrice">${product.price}</span></div>
+                            </div>
+                        </div>
+                    </div>  -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End  -->
+
+
+    <!-- Product Template Begin  -->
+    <template id="productTemplate">
+        <div class="productCol col-md-4" id="cardValue">
+            <div class="productBox">
+                <figure class="productImage">
+                    <a href=""><img src="" class="img-fluid" alt=""></a>
+                </figure>
+                <div class="shop-bar">
+                    <div class="stockElem">
+                        <button class="cartDecreament">-</button>
+                        <p class="produtQuantity">1</p>
+                        <button class="cartIncrement">+</button>
+                     </div>
+                    <a class="btn-cart addToCart_btn" href="javascript:;"></a>
+                </div>
+                <div class="productInfo">
+                    <h3 class="productTitle"><a href="#"></a></h3>
+                    <div class="productDesc"></div>
+                    <p class="stockText">In Stock: <span class="stock"></span></p>
+                    <div class="productPrice"><span class="oldPrice"></span><span class="actualPrice"></span></div>
+                </div>
+            </div>
+        </div> 
+    </template>
+    <!-- Product Template End    -->
+
+
+    <section>
+        <div class="container">
+            <div class="titleDiv text-center">
+                <span class="titleTag">skin solurion</span>
+                <h2 class="titleMain">SHOP BY CATEGORIES</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="shopByCategory sectionPadding" style="background-image: url(images/hd-1.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="menu-1">
+                        <a href="filter-by-category.html?tag=Beauty">Beauty</a>
+                        <a href="filter-by-category.html?tag=Cream">Cream</a>
+                        <a href="filter-by-category.html?tag=Fashion">Fashion</a>
+                        <a href="filter-by-category.html?tag=Skin Care">Skin Care</a>
+                        <a href="filter-by-category.html?tag=Trends">Trends</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="partnerSection sectionPadding">
+        <div class="container">
+            <div class="slick-slider partnerSlider">
+                <div class="item">
+                    <figure class="partnerImg"><img src="images/logo-1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure class="partnerImg"><img src="images/logo-2.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure class="partnerImg"><img src="images/logo-3.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure class="partnerImg"><img src="images/logo-4.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure class="partnerImg"><img src="images/logo-5.png" alt=""></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="whyUs sectionPadding sectionColor">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-6 show-scale">
+                        <img src="images/square-1.jpg" class="img-fluid mx-auto" alt="">
+                    </div>
+                    <div class="col-lg-6 fade-right">
+                        <div class="title">
+                            <p class="titleTag">why us?</p>
+                            <h2 class="titleMain">OUR PURPOSE</h2>                            
+                        </div>
+                        <p>
+                            We're going to share Mother Nature's beauty secrets with the world, are you ready?
+                        </p>
+                        <p>
+                            Harnessing the science of nature, we're taking
+                            it back to basics with eco-friendly, ethically-sourced and earth-derived ingredients so
+                            that your beauty shines from the inside. No harsh chemicals. Non-toxic. No compromises.
+                            It doesn't have to be complicated. So, get ready
+                            to join the beauty revolution!
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blog sectionPadding">
+        <div class="container">
+            <div class="title text-center mb-4">
+                <p class="titleTag mb-0">Latest News</p>
+                <h2 class="titleMain">BLOG</h2>                            
+            </div>
+            <div class="grid-list pt-4 mb-4">
+                <div class="grid-box">
+                    <div class="grid-item">
+                        <div class="blog-box">
+                            <a href="#" class="img-box" title="MODITAION: MIND PLANTS"><img src="images/blogImg-1.jpg" alt="MODITAION: MIND PLANTS"></a>
+                            <div class="caption">
+                                <div class="extra-field"><span>Don Jhon</span><span>June 5, 2025</span></div>
+                                <h2><a href="#">MODITAION: MIND PLANTS</a></h2>
+                                <p>
+                                    How to create a natural sanctuar from the comfort of your own home.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="blog-box">
+                            <a href="#" class="img-box" title="MODITAION: MIND PLANTS"><img src="images/blogImg-2.jpg" alt="MODITAION: MIND PLANTS"></a>
+                            <div class="caption">
+                                <div class="extra-field"><span>Don Jhon</span><span>June 5, 2025</span></div>
+                                <h2><a href="#">MODITAION: MIND PLANTS</a></h2>
+                                <p>
+                                    How to create a natural sanctuar from the comfort of your own home.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="blog-box">
+                            <a href="#" class="img-box" title="MODITAION: MIND PLANTS"><img src="images/blogImg-3.jpg" alt="MODITAION: MIND PLANTS"></a>
+                            <div class="caption">
+                                <div class="extra-field"><span>Don Jhon</span><span>June 5, 2025</span></div>
+                                <h2><a href="#">MODITAION: MIND PLANTS</a></h2>
+                                <p>
+                                    How to create a natural sanctuar from the comfort of your own home.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-4">
+                    <a href="blog.html" class="btn custom_btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    </main>
+
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3>HELP</h3>
+                    <ul class="icon-list icon-line">
+                        <li><a href="general-support.html">General Support</a></li>
+                        <li><a href="where-does-it.html">Where does it come from</a></li>
+                        <li><a href="why-do-we-use-it.html">Why do we use it</a></li>
+                        <li><a href="where-can-i-get.html">Where can I get some</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>ABOUT US</h3>
+                    <ul class="icon-list icon-line">
+                        <li><a href="about.html">About us and the company</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact us online</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>MORE FROM US</h3>
+                    <ul class="icon-list icon-line">
+                        <li><a href="#">Partners and advertising</a></li>
+                        <li><a href="faqs.html">FAQS</a></li>
+                        <li><a href="#">Services and projects</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>SUBSCRIBE</h3>
+                    <p>Join the JOLEAF email community for big news and big offers.</p>
+                    <hr class="space-xs">
+                    
+					
+                    <form action="detox-and-eye-mask.html" class="form-box" method="post">
+                        <input type="hidden" name="nospam" value="">
+                        <div class="row">
+                            <div class="col-8">
+                                <input id="email" name="email" placeholder="Email" type="email" class="input-text" required="" value="">
+                            </div>
+                            <div class="col-4">
+                                <input class="btn btn-sm" type="submit" name="subscribe" value="Join">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="#" title=""><img src="images/logo-white.svg" alt="logo"></a>
+                    </div>
+                    <div class="col-lg-4 justify-content-center text-center">
+                        <span>© Copyright 2025 Joleaf <br> 
+                        All rights reserved</span>
+                    </div>
+                    <div class="col-lg-4 align-right">                        
+                        <div class="icon-links icon-social social-colors-hover">
+                            <a class="facebook" href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="twitter" href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a> 
+                            <a class="instagram" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+                            <a class="pinterest" href="#" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </footer>
+    <!-- Footer End  -->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="src/main.js"></script>
+    <script src="header.js"></script>      
+    <script src="footer.js"></script>
+</body>
+</html>
+

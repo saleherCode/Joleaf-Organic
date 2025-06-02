@@ -1,0 +1,51 @@
+[
+    {
+      "id" : 1,
+      "name": "Detox & Eye Mask",
+      "description": "Infused with eucalyptus and mint for a breath of fresh air.",
+      "price": 8.99,
+      "image": "images/product1.jpg",
+      "stock": 30
+    },
+    {
+      "id" : 2,
+      "name": "Antioxidant Serum",
+      "description": "Infused with eucalyptus and mint for a breath of fresh air.",
+      "price": 16.00,
+      "image": "images/product2.jpg",
+      "stock": 33
+    },
+    {
+      "id" : 3,
+      "name": "Lip Gloss",
+      "description": "Infused with eucalyptus and mint for a breath of fresh air.",
+      "price": 6.5,
+      "image": "images/product3.jpg",
+      "stock": 25
+    },
+    {
+      "id" : 4,
+      "name": "Hair Wash",
+      "description": "Infused with eucalyptus and mint for a breath of fresh air.",
+      "price": 9.00,
+      "image": "images/product4.jpg",
+      "stock": 26
+    },
+    {
+      "id" : 5,
+      "name": "Body Wash",
+      "description": "Infused with eucalyptus and mint for a breath of fresh air.",
+      "price": 12.00,
+      "image": "images/product5.jpg",
+      "stock": 45
+    },
+    {
+      "id" : 6,
+      "name": "Skin Refresher",
+      "description": "Infused with eucalyptus and mint for a breath of fresh air.",
+      "price": 17.00,
+      "image": "images/product6.jpg",
+      "stock": 35
+    }
+  ]
+  
